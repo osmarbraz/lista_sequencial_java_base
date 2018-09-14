@@ -45,6 +45,7 @@ public class Principal {
      * @return Uma String com os dados da lista.
      */
     public static String listar(int[] lista, int n) {
+        //String de retorno
         String temp = "";
         for (int i = 0; i < n; i++) {
             temp = temp + (i) + "-" + lista[i] + "\n";
@@ -75,7 +76,7 @@ public class Principal {
      *
      * @return A quantidade de Nós da lista.
      */
-    public static int quantidadeLista() {
+    public static int getN() {
         return n;
     }
 
@@ -84,6 +85,7 @@ public class Principal {
          * Declaração da lista
          */
         int lista[] = new int[TAMANHO_LISTA];
+        
         // Controla o menu da lista
         int opcao = -1;
 
@@ -98,11 +100,12 @@ public class Principal {
                     + " 6- Remover Nó do início\n"
                     + " 7- Remover Nó do fim\n"
                     + " 8- Remover Nó de uma posição específica\n"
-                    + " 9- Remover Nó pelo valor\n"
-                    + "10- Mostrar a posição de um Nó\n"
-                    + "11- Mostrar a quantidade de Nós\n"
-                    + "12- Está cheia?\n"
-                    + "13- Está vazia?\n"
+                    + " 9- Remover Nó pelo valor\n"                    
+                    + "10- Procurar o dado de uma posição específica\n"
+                    + "11- Procurar a posição de um dado\n"
+                    + "12- Mostrar a quantidade de Nós\n"
+                    + "13- Está cheia?\n"
+                    + "14- Está vazia?\n"
                     + "99- Sair\n"));
             switch (opcao) {
                 case 1: {
@@ -118,7 +121,9 @@ public class Principal {
                     break;
                 }
                 case 3: {
-                    if (inserirFim(lista, leitura()) == true) {
+                    //Preenche o valor do dado
+                    int dado = leitura();
+                    if (inserirFim(lista, dado) == true) {
                         JOptionPane.showMessageDialog(null, "Nó inserido no fim com Sucesso!");
                     } else {
                         JOptionPane.showMessageDialog(null, "Nó não inserido no fim!");
@@ -154,14 +159,18 @@ public class Principal {
                     break;
                 }
                 case 11: {
-                    JOptionPane.showMessageDialog(null, "Quantidade de Nós na lista : " + quantidadeLista());
+                   
                     break;
                 }
                 case 12: {
-                    JOptionPane.showMessageDialog(null, "Lista está cheia : " + estaCheia());
+                    JOptionPane.showMessageDialog(null, "Quantidade de Nós na lista : " + getN());
                     break;
                 }
                 case 13: {
+                    JOptionPane.showMessageDialog(null, "Lista está cheia : " + estaCheia());
+                    break;
+                }
+                case 14: {
                     JOptionPane.showMessageDialog(null, "Lista está vazia : " + estaVazia());
                     break;
                 }

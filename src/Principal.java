@@ -29,10 +29,10 @@ public class Principal {
      * Insere um Nó no final da lista.
      *
      * @param lista Lista dos Nós.
-     * @param novo Novo valor a ser inserido.
+     * @param valor Um novo valor de um nó a ser inserido na lista.
      * @return Verdadeiro ou falso se conseguiu incluir o novo valor.
      */
-    public static boolean inserirFim(int[] lista, int novo) {
+    public static boolean inserirFim(int[] lista, int valor) {
        
         return false;
     }    
@@ -76,7 +76,7 @@ public class Principal {
      *
      * @return A quantidade de Nós da lista.
      */
-    public static int getN() {
+    public static int getQuantidade() {
         return n;
     }
 
@@ -163,7 +163,7 @@ public class Principal {
                     break;
                 }
                 case 12: {
-                    JOptionPane.showMessageDialog(null, "Quantidade de Nós na lista : " + getN());
+                    JOptionPane.showMessageDialog(null, "Quantidade de Nós na lista : " + getQuantidade());
                     break;
                 }
                 case 13: {

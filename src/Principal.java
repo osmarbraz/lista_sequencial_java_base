@@ -102,12 +102,12 @@ public class Principal {
                     + "Selecione a opção desejada:\n"
                     + " 1- Listar Nós\n"
                     + " 2- Inserir Nó no início\n"
-                    + " 3- Inserir Nó no fim\n"
-                    + " 4- Inserir Nó em uma posição especifica\n"
+                    + " 3- Inserir Nó em uma posição especifica\n"
+                    + " 4- Inserir Nó no fim\n"                    
                     + " 5- Inserir Nó ordenado\n"
                     + " 6- Remover Nó do início\n"
-                    + " 7- Remover Nó do fim\n"
-                    + " 8- Remover Nó de uma posição específica\n"
+                    + " 7- Remover Nó de uma posição específica\n"
+                    + " 8- Remover Nó do fim\n"                    
                     + " 9- Remover Nó pelo valor\n"
                     + "10- Procurar o dado de uma posição específica\n"
                     + "11- Procurar a posição de um dado\n"
@@ -182,7 +182,7 @@ public class Principal {
                     JOptionPane.showMessageDialog(null, "Lista está vazia : " + estaVazia());
                     break;
                 }
-            }
-        }
-    }
-}
+            }//Fim switch
+        }//Fim while
+    }//Fim main
+}//Fim Principal

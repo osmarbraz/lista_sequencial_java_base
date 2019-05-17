@@ -23,8 +23,8 @@ public class Principal {
      */
     public static int leitura() {
         return Integer.parseInt(JOptionPane.showInputDialog("Digite um valor:"));
-    }   
-      
+    }
+
     /**
      * Insere um Nó no final da lista.
      *
@@ -33,9 +33,17 @@ public class Principal {
      * @return Verdadeiro ou falso se conseguiu incluir o novo valor.
      */
     public static boolean inserirFim(int[] lista, int valor) {
-       
-        return false;
-    }    
+        if (n < TAMANHO_LISTA) {
+            //Insere o novo valor na posição n.
+            lista[n] = valor;
+            //Incrementa a quantidade de Nós.
+            n = n + 1;
+            return true;
+        } else {
+            System.out.println("Inserir Fim - Lista cheia.");
+            return false;
+        }
+    }
 
     /**
      * Lista os dados da lista.
@@ -52,7 +60,7 @@ public class Principal {
         }
         return temp;
     }
-    
+
     /**
      * Retorna se a lista está cheia.
      *
@@ -85,7 +93,7 @@ public class Principal {
          * Declaração da lista
          */
         int lista[] = new int[TAMANHO_LISTA];
-        
+
         // Controla o menu da lista
         int opcao = -1;
 
@@ -100,7 +108,7 @@ public class Principal {
                     + " 6- Remover Nó do início\n"
                     + " 7- Remover Nó do fim\n"
                     + " 8- Remover Nó de uma posição específica\n"
-                    + " 9- Remover Nó pelo valor\n"                    
+                    + " 9- Remover Nó pelo valor\n"
                     + "10- Procurar o dado de uma posição específica\n"
                     + "11- Procurar a posição de um dado\n"
                     + "12- Mostrar a quantidade de Nós\n"
@@ -117,7 +125,7 @@ public class Principal {
                     break;
                 }
                 case 2: {
-                   
+
                     break;
                 }
                 case 3: {
@@ -131,35 +139,35 @@ public class Principal {
                     break;
                 }
                 case 4: {
-                   
+
                     break;
                 }
                 case 5: {
-                   
+
                     break;
                 }
                 case 6: {
-                  
+
                     break;
                 }
                 case 7: {
-                   
+
                     break;
                 }
                 case 8: {
-                   
+
                     break;
                 }
                 case 9: {
-                   
+
                     break;
                 }
                 case 10: {
-                   
+
                     break;
                 }
                 case 11: {
-                   
+
                     break;
                 }
                 case 12: {

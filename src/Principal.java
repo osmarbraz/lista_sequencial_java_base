@@ -29,13 +29,13 @@ public class Principal {
      * Insere um Nó no final da lista.
      *
      * @param lista Lista dos Nós.
-     * @param valor Um novo valor de um nó a ser inserido na lista.
+     * @param dado Um novo valor de um nó a ser inserido na lista.
      * @return Verdadeiro ou falso se conseguiu incluir o novo valor.
      */
-    public static boolean inserirFim(int[] lista, int valor) {
+    public static boolean inserirFim(int[] lista, int dado) {
         if (n < TAMANHO_LISTA) {
             //Insere o novo valor na posição n.
-            lista[n] = valor;
+            lista[n] = dado;
             //Incrementa a quantidade de Nós.
             n = n + 1;
             return true;
@@ -88,6 +88,11 @@ public class Principal {
         return n;
     }
 
+   /**
+     * Método principal.
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
         /**
          * Declaração da lista
@@ -97,7 +102,9 @@ public class Principal {
         // Controla o menu da lista
         int opcao = -1;
 
+        //Laço do menu de opções
         while (opcao != 99) {
+            //Monta o menu de opções
             opcao = Integer.parseInt(JOptionPane.showInputDialog("\t### Lista Sequencial ###\n"
                     + "Selecione a opção desejada:\n"
                     + " 1- Listar Nós\n"

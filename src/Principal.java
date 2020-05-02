@@ -136,6 +136,10 @@ public class Principal {
                     break;
                 }
                 case 3: {
+                    
+                    break;
+                }
+                case 4: {
                     //Preenche o valor do dado
                     int dado = leitura();
                     if (inserirFim(lista, dado) == true) {
@@ -143,9 +147,6 @@ public class Principal {
                     } else {
                         JOptionPane.showMessageDialog(null, "Nó não inserido no fim!");
                     }
-                    break;
-                }
-                case 4: {
 
                     break;
                 }
